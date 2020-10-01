@@ -1,12 +1,8 @@
 package com.harsharjeria.courseapp.Models;
-
+import java.util.Scanner;
 public class Classes {
 
-    public String  nameclass, imageclasslink;
-    public int idclass;
-
-    public Classes(){}
-    public Classes(int idclass, String nameclass, String imageclasslink) {
+ public class(int idclass, String nameclass, String imageclasslink) {
         this.idclass = idclass;
         this.nameclass = nameclass;
         this.imageclasslink = imageclasslink;
@@ -34,5 +30,13 @@ public class Classes {
 
     public void setImageclasslink(String imageclasslink) {
         this.imageclasslink = imageclasslink;
+    }
+    public static void main(String [] args){
+        Classes c=new Classes();
+    Scanner sc=new Scanner(System.in);
+      int idclass = sc.nextInt();
+      String nameclass = sc.next();
+      String imageclasslink=  sc.next();
+        c.class(idclass,nameclass,imageclasslink);
     }
 }
